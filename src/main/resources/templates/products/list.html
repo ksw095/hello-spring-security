@@ -108,6 +108,14 @@
                                       onsubmit="return confirm('삭제하시겠습니까?')">
                                     <button class="btn btn-outline-danger btn-sm">삭제</button>
                                 </form>
+                                <div class="d-inline-flex gap-1 justify-content-center align-items-center">
+                                    <a th:href="@{/products/{id}/edit(id=${p.id})}"
+                                       class="btn btn-outline-primary btn-sm">수정</a>
+                                    <form th:action="@{/products/{id}/delete(id=${p.id})}" method="post" class="m-0"
+                                          onsubmit="return confirm('삭제하시겠습니까?')">
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">삭제</button>
+                                    </form>
+                                </div>
                             </td>
                         </tr>
                     </tbody>

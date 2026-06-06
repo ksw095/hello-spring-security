@@ -93,8 +93,10 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<footer style="text-align:center; margin-top:20px; padding:10px; background:#f0f0f0;">
-    <p th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(), 'yyyy년 MM월 dd일 (E) a hh:mm:ss') + ' | 학번: 2271385 | 성명: 강승원'}"></p>
+
+<footer style="width:100%; text-align:center; margin-top:40px; padding:10px; background:#f0f0f0;">
+    <p th:text="${'실습 수행 일시: ' + #temporals.format(#temporals.createNow(), 'yyyy-MM-dd HH:mm:ss') + ' | 학번: 2271385 | 성명: 강승원'}"></p>
 </footer>
+
 </body>
 </html>
